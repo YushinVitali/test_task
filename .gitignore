@@ -1,0 +1,6 @@
+CMakeLists.txt.user
+
+*.exe
+
+build-*
+serialization_deserialization/bin
