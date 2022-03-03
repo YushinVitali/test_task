@@ -4,7 +4,7 @@
 #define __LIST_HPP__
 
 
-#include <map>
+#include <unordered_map>
 
 #include <list_node.hpp>
 
@@ -51,7 +51,7 @@ private:
 	ListNode* DeserializeListNode(FILE* file) const;
 
 private:
-	std::map<ListNode*, size_t> m_sequentialNodeNumbers;
+	std::unordered_map<ListNode*, size_t> m_sequentialNodeNumbers;
 
 	ListNode* m_head;
 	ListNode* m_tail;
